@@ -206,7 +206,7 @@ ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name end
 #   6.  NETWORKING
 #   ---------------------------
  
-alias showip='curl ip.appspot.com'                  # myip:         Public facing IP Address
+alias showip='curl ip.appspot.com'                  # showip:       Public facing IP Address
 alias netCons='lsof -i'                             # netCons:      Show all open TCP/IP sockets
 alias flushDNS='dscacheutil -flushcache'            # flushDNS:     Flush out the DNS Cache
 alias lsock='sudo /usr/sbin/lsof -i -P'             # lsock:        Display open sockets
@@ -226,7 +226,7 @@ alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rul
         echo -e "\n${RED}Current date :$NC " ; date
         echo -e "\n${RED}Machine stats :$NC " ; uptime
         echo -e "\n${RED}Current network location :$NC " ; scselect
-        echo -e "\n${RED}Public facing IP Address :$NC " ;myip
+        echo -e "\n${RED}Public facing IP Address :$NC " ;showip
         #echo -e "\n${RED}DNS Configuration:$NC " ; scutil --dns
         echo
     }
